@@ -6,4 +6,4 @@
  * @author MIO
  *
  */
-package org.luoweidong.home.apps.pgEntranceExamAnalysis.config;
+package org.luoweidong.home.apps.pgeeanalysis.config;

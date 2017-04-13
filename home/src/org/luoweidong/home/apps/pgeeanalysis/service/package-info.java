@@ -6,4 +6,4 @@
  * @author MIO
  *
  */
-package org.luoweidong.home.apps.pgEntranceExamAnalysis.service;
+package org.luoweidong.home.apps.pgeeanalysis.service;

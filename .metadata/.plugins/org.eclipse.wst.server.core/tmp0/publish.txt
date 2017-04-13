@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Sat Dec 31 23:08:40 CST 2016
-org.eclipse.jst.jee.server\:home=C\:\\Users\\MIO\\Desktop\\develop\\apache-tomcat-8.0.33\\webapps\\home

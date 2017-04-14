@@ -13,5 +13,19 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/poi-examples-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/poi-excelant-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/poi-ooxml-schemas-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/poi-scratchpad-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MIO/Documents/GitHub/tomcat-server-home-page/javalib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

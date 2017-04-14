@@ -28,7 +28,6 @@ local.properties
 # PDT-specific
 .buildpath
 
-
 #################
 ## Visual Studio
 #################
@@ -212,3 +211,5 @@ pip-log.txt
 #Translations
 *.mo
 javalib
+*.xlsx
+DBConfigSec.java

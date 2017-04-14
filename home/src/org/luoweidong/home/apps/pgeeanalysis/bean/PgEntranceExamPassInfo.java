@@ -40,12 +40,12 @@ public class PgEntranceExamPassInfo {
   /**
    * 分数线.
    */
-  private int  passMark;
+  private int passMark;
 
   /**
    * 学位类型.
    */
-  private int  degreeType;
+  private String degreeType;
 
   /**
    * @return the id
@@ -148,14 +148,14 @@ public class PgEntranceExamPassInfo {
   /**
    * @return the degreeType.
    */
-  public int getDegreeType() {
+  public String getDegreeType() {
     return degreeType;
   }
 
   /**
    * @param degreeType the degreeType to set.
    */
-  public void setDegreeType(int degreeType) {
+  public void setDegreeType(String degreeType) {
     this.degreeType = degreeType;
   }
 }

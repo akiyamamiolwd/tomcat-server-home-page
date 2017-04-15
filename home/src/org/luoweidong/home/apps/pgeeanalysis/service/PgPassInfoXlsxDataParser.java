@@ -72,20 +72,20 @@ public final class PgPassInfoXlsxDataParser {
         XSSFRow row = sheet.getRow(i);
         PgEntranceExamPassInfo pgInfo = new PgEntranceExamPassInfo();
         if (row != null) {
-          pgInfo.setYear(Integer.parseInt(
-              row.getCell(CELL_NUM_YEAR).getStringCellValue()));
+          pgInfo.setYear((int)Double.parseDouble(
+              row.getCell(CELL_NUM_YEAR).toString()));
           pgInfo.setEnrollUnit(
-              row.getCell(CELL_NUM_ENROLL_UNIT).getStringCellValue());
+              row.getCell(CELL_NUM_ENROLL_UNIT).toString());
           pgInfo.setMajor(
-              row.getCell(CELL_NUM_MAJOR).getStringCellValue());
+              row.getCell(CELL_NUM_MAJOR).toString());
           pgInfo.setDegreeType(
-              row.getCell(CELL_NUM_DEGREE_TYPE).getStringCellValue());
+              row.getCell(CELL_NUM_DEGREE_TYPE).toString());
           pgInfo.setSubject(
-              row.getCell(CELL_NUM_SUBJECT).getStringCellValue());
+              row.getCell(CELL_NUM_SUBJECT).toString());
           pgInfo.setSubjectType(
-              row.getCell(CELL_NUM_SUBJECT_TYPE).getStringCellValue());
-          pgInfo.setPassMark(Integer.parseInt(
-              row.getCell(CELL_NUM_PASS_MARK).getStringCellValue()));
+              row.getCell(CELL_NUM_SUBJECT_TYPE).toString());
+          pgInfo.setPassMark((int)Double.parseDouble(
+              row.getCell(CELL_NUM_PASS_MARK).toString()));
           pgPassInfoList.add(pgInfo);
         }
       }

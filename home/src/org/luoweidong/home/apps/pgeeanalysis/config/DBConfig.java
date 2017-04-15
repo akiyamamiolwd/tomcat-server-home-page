@@ -28,4 +28,24 @@ public final class DBConfig {
       + "`pass_mark`, `degree_type`) "
       + "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
+  public static enum SQL_UPDATE_ENTRANCE_EXAM_PASS_INFO_ENUM{
+    YEAR(1),
+    ENROLL_UNIT(2),
+    MAJOR(3),
+    SUBJECT_TYPE(4),
+    SUBJECT(5),
+    PASS_MARK(6),
+    DEGREE_TYPE(7);
+
+    private int value;
+
+    // 构造器默认也只能是private, 从而保证构造函数只能在内部使用
+    SQL_UPDATE_ENTRANCE_EXAM_PASS_INFO_ENUM(int value) {
+        this.value = value;
+    }
+  
+    public int getValue() {
+        return value;
+    }
+  } 
 }

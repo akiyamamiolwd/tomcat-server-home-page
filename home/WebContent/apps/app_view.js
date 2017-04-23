@@ -1,8 +1,10 @@
-//# sourceURL=appView.js
 /**
  * app视图管理js
  * 
  */
-;(function($, window){
+var org = org || {};
+org.luoweidong = org.luoweidong || {};
+org.luoweidong.app = org.luoweidong.app || {};
+;(function($, window, lwd){
   
-})(jQuery, window);
+})(jQuery, window, org.luoweidong);

@@ -1,4 +1,3 @@
-//# sourceURL=tools.js
 /**
  * 命名空间管理
  */
@@ -26,12 +25,13 @@ org.luoweidong = org.luoweidong || {};
       var target_tag = (type === 'js')?'script':'link';
       var link_attr = (type === 'js')?'src':'href';
       var files = document.getElementsByTagName(target_tag);
-      var i = scripts.length - 1;
+      var i = files.length - 1;
       while(i >= 0){
-        if(scripts[i][link_attr] === url){
+        if(files[i][link_attr] === url){
           console.trace("[WRAN]The file has loaded!");
           return true;
         }
+        i--;
       }
       return false;
     },
@@ -41,7 +41,7 @@ org.luoweidong = org.luoweidong || {};
      * 
      * @param url css文件的路径
      */
-    isCSSFileExist : function(url){
+    isCssFileExist : function(url){
       return this.isFileExist(url, 'css');
     },
     /**

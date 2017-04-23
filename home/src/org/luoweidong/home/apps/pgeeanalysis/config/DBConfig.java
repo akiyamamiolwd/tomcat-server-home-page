@@ -28,7 +28,16 @@ public final class DBConfig {
       + "`pass_mark`, `degree_type`) "
       + "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
+  /**
+   * 研究生入学考试信息更新所用的枚举类.
+   * 便于模型转字段.
+   * @author MIO
+   *
+   */
   public static enum SQL_UPDATE_ENTRANCE_EXAM_PASS_INFO_ENUM{
+    /**
+     * 年份.
+     */
     YEAR(1),
     ENROLL_UNIT(2),
     MAJOR(3),
@@ -43,9 +52,9 @@ public final class DBConfig {
     SQL_UPDATE_ENTRANCE_EXAM_PASS_INFO_ENUM(int value) {
         this.value = value;
     }
-  
+
     public int getValue() {
         return value;
     }
-  } 
+  }
 }

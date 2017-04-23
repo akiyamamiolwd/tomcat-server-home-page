@@ -213,3 +213,5 @@ pip-log.txt
 javalib
 *.xlsx
 DBConfigSec.java
+db_script/
+jslib/

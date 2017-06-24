@@ -2,9 +2,6 @@
  * app视图管理js
  * 
  */
-var org = org || {};
-org.luoweidong = org.luoweidong || {};
-org.luoweidong.app = org.luoweidong.app || {};
-;(function($, window, lwd){
+;(function($, window, _app){
   
-})(jQuery, window, org.luoweidong);
+})(jQuery, window, org.luoweidong.app);

@@ -144,7 +144,7 @@ org.luoweidong = org.luoweidong || {};
      * @param url js文件的路径
      * @param async 是否异步加载
      */
-    loadJsFile : function(url, async){
+    loadJsFile : function(url, async, callback){
       if(url && !this.isJsFileExist(url)){
         var s = document.createElement('script');
         s.type = 'text/javascript';
@@ -152,6 +152,24 @@ org.luoweidong = org.luoweidong || {};
         s.src = url;
         var body = document.getElementsByTagName('body')[0];
         body.appendChild(s);
+        
+        if(typeof callback == 'function'){
+          //回调函数的处理
+          if (document.all) {  
+            //IE
+            s.onreadystatechange = function() {  
+              var state = this.readyState;  
+              if (state === 'loaded' || state === 'complete') {  
+                callback();  
+              }  
+            }  
+          } else {  
+            //firefox, chrome  
+            s.onload = function() {  
+              callback();  
+            }  
+          } 
+        }
       }
     },
     /**
@@ -178,11 +196,23 @@ org.luoweidong = org.luoweidong || {};
      * @param urls js文件的路径的数组
      * @param async 是否异步加载
      */
-    loadJsFiles : function(urls, async){
+    loadJsFiles : function(urls, async, callback){
       var _this = this;
       if(urls && (urls instanceof Array)){
+        var _length = urls.length;
+        var _cnt = 0;
         urls.forEach(function(item, index, array){
-          _this.loadJsFile(item, async);
+          if(typeof callback == 'function'){
+            _this.loadJsFile(item, async, function(){
+              _cnt++;
+              if(_cnt == _length){
+                callback();
+              }
+            });
+          }
+          else{
+            _this.loadJsFile(item, async);
+          }
         });
       }
     },

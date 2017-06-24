@@ -45,16 +45,23 @@ else{
         csssheets.push(dataTableCSS);
       }
       with(_paths.myAppPath){
-        scripts.push(appConfig);
+        //scripts.push(appConfig);
         scripts.push(appManager);
-        scripts.push(appView);
+        //scripts.push(appView);
       }
+      _loadFileTool.loadCssFiles(csssheets);
+      _loadFileTool.loadJsFiles(scripts, false, function(){
+        console.log('scripts begin');
+        window.appManager = lwd.app.getAppManager();
+      });
+      /*
       scripts.forEach(function(item, index, array){
-        _loadFileTool.loadJsFile(item);
+        _loadFileTool.loadJsFile(item, false);
       });
       csssheets.forEach(function(item, index, array){
         _loadFileTool.loadCssFile(item);
       });
+      */
     }
     
   })(window, org.luoweidong);

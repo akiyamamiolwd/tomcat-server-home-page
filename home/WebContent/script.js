@@ -17,7 +17,7 @@ else{
     
     var sdkRoot = './sdk/';
     lwd.pathConfig.sdkPath = {
-      tools : sdkRoot + 'tools.js'
+      sdks : sdkRoot + 'sdk.js'
     };
 
     var appsRoot = './apps/';
@@ -29,12 +29,12 @@ else{
     
     var _paths = lwd.pathConfig;
     
-    if(!lwd.tools){
-      console.log('[ERROR]namespace org.luoweidong.tools is not defined, maybe tools.js is not loaded!!');
+    if(!lwd.sdk){
+      console.log('[ERROR]namespace org.luoweidong.tools is not defined, maybe sdk.js is not loaded!!');
     }
     else{
-      var _tools = lwd.tools;
-      var _loadFileTool = _tools.loadFileTools;
+      var _sdk = lwd.sdk;
+      var _loadFileTool = _sdk.loadFileTools;
       //加载js和css
       var scripts = [];
       var csssheets = [];
